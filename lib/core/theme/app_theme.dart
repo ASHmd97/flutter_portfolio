@@ -14,15 +14,15 @@ class AppTheme {
 
     // Color Scheme
     colorScheme: ColorScheme.fromSeed(
-      seedColor: AppColors.white,
+      seedColor: AppColors.black,
       brightness: Brightness.light,
       primary: AppColors.black,
       secondary: AppColors.primaryBlue,
       surface: AppColors.white,
       error: AppColors.error,
-      onPrimary: AppColors.white,
+      onPrimary: AppColors.black,
       onSecondary: AppColors.white,
-      onSurface: AppColors.white,
+      onSurface: AppColors.black,
       onError: AppColors.white,
     ),
 
@@ -97,6 +97,32 @@ class AppTheme {
           horizontal: R.paddingSMValue,
           vertical: R.paddingXSValue,
         ),
+      ),
+    ),
+
+    // =================== Icon Button Theme===================
+    iconButtonTheme: IconButtonThemeData(
+      style: ButtonStyle(
+        backgroundColor: WidgetStateProperty.all(AppColors.white),
+        padding: WidgetStateProperty.all(EdgeInsets.all(R.paddingSMValue)),
+        shape: WidgetStateProperty.all(
+          RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+        ),
+        side: WidgetStateProperty.all(
+          BorderSide(color: AppColors.black, width: 2),
+        ),
+        foregroundColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.hovered)) {
+            return AppColors.white;
+          }
+          return AppColors.black;
+        }),
+        overlayColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.hovered)) {
+            return AppColors.black;
+          }
+          return null;
+        }),
       ),
     ),
 
