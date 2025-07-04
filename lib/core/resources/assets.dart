@@ -122,6 +122,10 @@ class Assets {
   /// assets/icons/WhatsApp_Original.svg
   static const String iconsWhatsAppOriginal = "assets/icons/WhatsApp_Original.svg";
 
+  /// Assets for imagesElevateLogo
+  /// assets/images/elevate_logo.jpg
+  static const String imagesElevateLogo = "assets/images/elevate_logo.jpg";
+
   /// Assets for imagesHeroImg
   /// assets/images/hero_img.png
   static const String imagesHeroImg = "assets/images/hero_img.png";
