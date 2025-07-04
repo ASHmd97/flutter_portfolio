@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/feature/home/view/widgets/about_me/about_me_section.dart';
 import 'package:flutter_portfolio/feature/home/view/widgets/experience/experience_section.dart';
 import 'package:flutter_portfolio/feature/home/view/widgets/hero/hero_section.dart';
 import 'package:flutter_portfolio/feature/home/view/widgets/skills/skills_section.dart';
@@ -15,6 +16,7 @@ class HomePageBody extends StatelessWidget {
           const HeroSection(),
           const SkillsSection(),
           const ExperienceSection(),
+          const AboutMeSection(),
         ],
       ),
     );
