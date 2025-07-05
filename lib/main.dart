@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: AppTheme.lightTheme,
       home: const HomePage(),
+      // ProjectDetailsView(project: ksShowcaseProjects[0]),
     );
   }
 }

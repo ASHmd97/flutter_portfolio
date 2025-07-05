@@ -17,6 +17,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.13.0"
+  atlas_icons:
+    dependency: "direct main"
+    description:
+      name: atlas_icons
+      sha256: f4790795c495cf9eabb91b75096a4f687aaa6f99ff907d18d18aa8b54a022adc
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.12"
   boolean_selector:
     dependency: transitive
     description:
@@ -107,6 +115,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  gap:
+    dependency: transitive
+    description:
+      name: gap
+      sha256: f19387d4e32f849394758b91377f9153a1b41d79513ef7668c088c77dbc6955d
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.1"
   google_fonts:
     dependency: "direct main"
     description:
@@ -139,6 +155,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.0.0"
+  layout:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: main
+      resolved-ref: "918ccd25bd2ae21d2f2954d887f9c87a4f5735e2"
+      url: "https://github.com/YeLwinOo-Steve/layout.git"
+    source: git
+    version: "1.0.4"
   leak_tracker:
     dependency: transitive
     description:
@@ -376,6 +401,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
+  visibility_detector:
+    dependency: "direct main"
+    description:
+      name: visibility_detector
+      sha256: dd5cc11e13494f432d15939c3aa8ae76844c42b723398643ce9addb88a5ed420
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.0+2"
   vm_service:
     dependency: transitive
     description:
