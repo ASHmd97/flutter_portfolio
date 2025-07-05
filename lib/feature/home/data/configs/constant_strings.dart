@@ -1,5 +1,3 @@
-
-
 import 'package:flutter_portfolio/feature/home/data/configs/constant_assets.dart';
 import 'package:flutter_portfolio/feature/home/data/configs/constant_icons.dart';
 import 'package:flutter_portfolio/feature/home/data/models/project_info.dart';
@@ -82,13 +80,7 @@ const String ksFlutter = "Flutter & Dart";
 const String ksMobile = 'Mobile Technologies';
 const String ksWebAndOther = 'Web & Other Technologies';
 final List<String> ksMobileTech = ['Flutter', 'Dart'];
-final List<String> ksWebTech = [
-  'HTML',
-  'CSS',
-  'Three Js',
-  'C',
-  'Java',
-];
+final List<String> ksWebTech = ['HTML', 'CSS', 'Three Js', 'C', 'Java'];
 final List<String> ksOtherTech = [
   'Firebase',
   'GraphQL',
@@ -171,7 +163,7 @@ const String ksActivities = "Activities I've joined";
 //     responsibilities: [
 //       "Software house of the second largest commercial bank in Myanamar",
 //       "Closely collaborated with mobile developers, backend developers, UI/ UX designers and QA team for AYA Pay v3.0 Lite App",
-//       """Mainly responsible for 
+//       """Mainly responsible for
 //         ● Project Architecture
 //         ● Authentication flow,
 //         ● OCR Scanning,
@@ -393,6 +385,7 @@ const String _WINDOWS = 'Windows';
 const String _LINUX = 'Linux';
 const String _MAC = 'MacOs';
 const String _WEB = 'Web';
+
 final List<ShowcaseProject> ksShowcaseProjects = [
   ShowcaseProject(
     title: 'Pulse-X State Management',
@@ -430,28 +423,13 @@ final List<ShowcaseProject> ksShowcaseProjects = [
     tech: ProjectInfo(
       icon: kiChip,
       label: 'Tools & Technologies',
-      contents: [
-        _FLUTTER.toUpperCase(),
-        _DART.toUpperCase(),
-      ],
+      contents: [_FLUTTER.toUpperCase(), _DART.toUpperCase()],
     ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
+    author: ProjectInfo(icon: kiPerson, label: 'Developer', contents: [_ME]),
     platform: ProjectInfo(
       icon: kiLaptop,
       label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-        _WINDOWS,
-        _LINUX,
-        _MAC,
-      ],
+      contents: [_ANDROID, _IOS, _WINDOWS, _LINUX, _MAC],
     ),
   ),
   ShowcaseProject(
@@ -466,12 +444,11 @@ final List<ShowcaseProject> ksShowcaseProjects = [
           - Account Control
         """,
     link: ProjectInfo(
-        icon: kiLink,
-        label: "Project Links",
-        isLink: true,
-        contents: [
-          "https://github.com/YeLwinOo-Steve/notee",
-        ]),
+      icon: kiLink,
+      label: "Project Links",
+      isLink: true,
+      contents: ["https://github.com/YeLwinOo-Steve/notee"],
+    ),
     heroTag: 'notee',
     tags: ProjectInfo(
       icon: kiTag,
@@ -495,20 +472,11 @@ final List<ShowcaseProject> ksShowcaseProjects = [
         _FIREBASE.toUpperCase(),
       ],
     ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
+    author: ProjectInfo(icon: kiPerson, label: 'Developer', contents: [_ME]),
     platform: ProjectInfo(
       icon: kiLaptop,
       label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-      ],
+      contents: [_ANDROID, _IOS],
     ),
   ),
   ShowcaseProject(
@@ -527,44 +495,25 @@ final List<ShowcaseProject> ksShowcaseProjects = [
       icon: kiLink,
       label: "Project Links",
       isLink: true,
-      contents: [
-        "https://github.com/YeLwinOo-Steve/thread_logo_animation",
-      ],
+      contents: ["https://github.com/YeLwinOo-Steve/thread_logo_animation"],
     ),
     heroTag: 'threads_logo',
     tags: ProjectInfo(
       icon: kiTag,
       label: 'Tags',
       isTag: true,
-      contents: [
-        'animation',
-        _FLUTTER.toLowerCase(),
-        _DART.toLowerCase(),
-      ],
+      contents: ['animation', _FLUTTER.toLowerCase(), _DART.toLowerCase()],
     ),
     tech: ProjectInfo(
       icon: kiChip,
       label: 'Tools & Technologies',
-      contents: [
-        _DART.toUpperCase(),
-        _FLUTTER.toUpperCase(),
-      ],
+      contents: [_DART.toUpperCase(), _FLUTTER.toUpperCase()],
     ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
+    author: ProjectInfo(icon: kiPerson, label: 'Developer', contents: [_ME]),
     platform: ProjectInfo(
       icon: kiLaptop,
       label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-        _WEB,
-      ],
+      contents: [_ANDROID, _IOS, _WEB],
     ),
   ),
   ShowcaseProject(
@@ -579,13 +528,14 @@ final List<ShowcaseProject> ksShowcaseProjects = [
         Some of the data may be inaccurate because I collect most of my data on the Internet.
         """,
     link: ProjectInfo(
-        icon: kiLink,
-        label: "Project Links",
-        isLink: true,
-        contents: [
-          "https://the-golden-land.vercel.app/",
-          "https://github.com/YeLwinOo-Steve/TheGoldenLand",
-        ]),
+      icon: kiLink,
+      label: "Project Links",
+      isLink: true,
+      contents: [
+        "https://the-golden-land.vercel.app/",
+        "https://github.com/YeLwinOo-Steve/TheGoldenLand",
+      ],
+    ),
     heroTag: 'the-golden-land',
     tags: ProjectInfo(
       icon: kiTag,
@@ -607,19 +557,11 @@ final List<ShowcaseProject> ksShowcaseProjects = [
         _JAVASCRIPT.toUpperCase(),
       ],
     ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
+    author: ProjectInfo(icon: kiPerson, label: 'Developer', contents: [_ME]),
     platform: ProjectInfo(
       icon: kiLaptop,
       label: 'Available Platforms',
-      contents: [
-        _WEB,
-      ],
+      contents: [_WEB],
     ),
   ),
   ShowcaseProject(
@@ -655,28 +597,13 @@ final List<ShowcaseProject> ksShowcaseProjects = [
     tech: ProjectInfo(
       icon: kiChip,
       label: 'Tools & Technologies',
-      contents: [
-        _FLUTTER.toUpperCase(),
-        _DART.toUpperCase(),
-      ],
+      contents: [_FLUTTER.toUpperCase(), _DART.toUpperCase()],
     ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
+    author: ProjectInfo(icon: kiPerson, label: 'Developer', contents: [_ME]),
     platform: ProjectInfo(
       icon: kiLaptop,
       label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-        _LINUX,
-        _MAC,
-        _WEB,
-      ],
+      contents: [_ANDROID, _IOS, _LINUX, _MAC, _WEB],
     ),
   ),
   ShowcaseProject(
@@ -692,43 +619,25 @@ final List<ShowcaseProject> ksShowcaseProjects = [
       icon: kiLink,
       label: "Project Links",
       isLink: true,
-      contents: [
-        "https://github.com/YeLwinOo-Steve/FlappyIronman",
-      ],
+      contents: ["https://github.com/YeLwinOo-Steve/FlappyIronman"],
     ),
     heroTag: 'flappy_ironman',
     tags: ProjectInfo(
       icon: kiTag,
       label: 'Tags',
       isTag: true,
-      contents: [
-        'game',
-        _FLUTTER.toLowerCase(),
-        _DART.toLowerCase(),
-      ],
+      contents: ['game', _FLUTTER.toLowerCase(), _DART.toLowerCase()],
     ),
     tech: ProjectInfo(
       icon: kiChip,
       label: 'Tools & Technologies',
-      contents: [
-        _DART.toUpperCase(),
-        _FLUTTER.toUpperCase(),
-      ],
+      contents: [_DART.toUpperCase(), _FLUTTER.toUpperCase()],
     ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
+    author: ProjectInfo(icon: kiPerson, label: 'Developer', contents: [_ME]),
     platform: ProjectInfo(
       icon: kiLaptop,
       label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-      ],
+      contents: [_ANDROID, _IOS],
     ),
   ),
   ShowcaseProject(
@@ -743,43 +652,25 @@ final List<ShowcaseProject> ksShowcaseProjects = [
       icon: kiLink,
       label: "Project Links",
       isLink: true,
-      contents: [
-        "https://github.com/YeLwinOo-Steve/AIChatbot",
-      ],
+      contents: ["https://github.com/YeLwinOo-Steve/AIChatbot"],
     ),
     heroTag: 'ai_chat_bot',
     tags: ProjectInfo(
       icon: kiTag,
       label: 'Tags',
       isTag: true,
-      contents: [
-        'chat bot',
-        _FLUTTER.toLowerCase(),
-        _DART.toLowerCase(),
-      ],
+      contents: ['chat bot', _FLUTTER.toLowerCase(), _DART.toLowerCase()],
     ),
     tech: ProjectInfo(
       icon: kiChip,
       label: 'Tools & Technologies',
-      contents: [
-        _DART.toUpperCase(),
-        _FLUTTER.toUpperCase(),
-      ],
+      contents: [_DART.toUpperCase(), _FLUTTER.toUpperCase()],
     ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
+    author: ProjectInfo(icon: kiPerson, label: 'Developer', contents: [_ME]),
     platform: ProjectInfo(
       icon: kiLaptop,
       label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-      ],
+      contents: [_ANDROID, _IOS],
     ),
   ),
   ShowcaseProject(
@@ -794,9 +685,7 @@ final List<ShowcaseProject> ksShowcaseProjects = [
       icon: kiLink,
       label: "Project Links",
       isLink: true,
-      contents: [
-        "https://github.com/YeLwinOo-Steve/graphql-associate-dev",
-      ],
+      contents: ["https://github.com/YeLwinOo-Steve/graphql-associate-dev"],
     ),
     heroTag: 'graphql_notes',
     tags: ProjectInfo(
@@ -808,17 +697,9 @@ final List<ShowcaseProject> ksShowcaseProjects = [
     tech: ProjectInfo(
       icon: kiChip,
       label: 'Tools & Technologies',
-      contents: [
-        _GRAPHQL.toLowerCase(),
-      ],
+      contents: [_GRAPHQL.toLowerCase()],
     ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
+    author: ProjectInfo(icon: kiPerson, label: 'Developer', contents: [_ME]),
     platform: ProjectInfo(
       icon: kiLaptop,
       label: 'Available Platforms',
@@ -839,34 +720,21 @@ final List<ShowcaseProject> ksShowcaseProjects = [
       icon: kiLink,
       label: "Project Links",
       isLink: true,
-      contents: [
-        "https://github.com/YeLwinOo-Steve/design_patterns",
-      ],
+      contents: ["https://github.com/YeLwinOo-Steve/design_patterns"],
     ),
     heroTag: 'design_patterns',
     tags: ProjectInfo(
       icon: kiTag,
       label: 'Tags',
       isTag: true,
-      contents: [
-        'design_patterns',
-        _DART.toLowerCase(),
-      ],
+      contents: ['design_patterns', _DART.toLowerCase()],
     ),
     tech: ProjectInfo(
       icon: kiChip,
       label: 'Tools & Technologies',
-      contents: [
-        _DART.toUpperCase(),
-      ],
+      contents: [_DART.toUpperCase()],
     ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
+    author: ProjectInfo(icon: kiPerson, label: 'Developer', contents: [_ME]),
     platform: ProjectInfo(
       icon: kiLaptop,
       label: 'Available Platforms',
