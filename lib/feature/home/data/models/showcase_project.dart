@@ -1,6 +1,7 @@
 import 'project_info.dart';
 
 class ShowcaseProject {
+  final String id;
   final String title;
   final String image;
   final String shortDescription;
@@ -13,6 +14,7 @@ class ShowcaseProject {
   final ProjectInfo platform;
   final List<String> images;
   ShowcaseProject({
+    required this.id,
     required this.title,
     required this.heroTag,
     required this.image,

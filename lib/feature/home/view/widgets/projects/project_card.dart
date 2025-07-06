@@ -5,6 +5,7 @@ import 'package:flutter_portfolio/core/theme/app_styles.dart';
 import 'package:flutter_portfolio/feature/home/data/configs/configs.dart';
 import 'package:flutter_portfolio/feature/home/data/models/showcase_project.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 
 class ProjectCard extends StatelessWidget {
   final ShowcaseProject project;
@@ -13,43 +14,48 @@ class ProjectCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     bool isOod = ksShowcaseProjects.indexOf(project) % 2 == 0;
-    return Responsive.isDesktop(context) || Responsive.isTablet(context)
-        ? Container(
-            padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 20),
-            height: Responsive.isDesktop(context) ? 500 : 400,
-            child: isOod
-                ? Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Expanded(child: ProjectImage(project: project)),
-                      const SizedBox(width: 24),
-                      Expanded(child: ProjectInfo(project: project)),
-                    ],
-                  )
-                : Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Expanded(child: ProjectInfo(project: project)),
-                      const SizedBox(width: 24),
-                      Expanded(child: ProjectImage(project: project)),
-                    ],
+    return GestureDetector(
+      onTap: () {
+        GoRouter.of(context).go('/project/${project.id}');
+      },
+      child: Responsive.isDesktop(context) || Responsive.isTablet(context)
+          ? Container(
+              padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 20),
+              height: Responsive.isDesktop(context) ? 500 : 400,
+              child: isOod
+                  ? Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Expanded(child: ProjectImage(project: project)),
+                        const SizedBox(width: 24),
+                        Expanded(child: ProjectInfo(project: project)),
+                      ],
+                    )
+                  : Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Expanded(child: ProjectInfo(project: project)),
+                        const SizedBox(width: 24),
+                        Expanded(child: ProjectImage(project: project)),
+                      ],
+                    ),
+            )
+          : Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: Image.asset(
+                    project.image,
+                    fit: BoxFit.cover,
+                    width: double.infinity,
                   ),
-          )
-        : Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: Image.asset(
-                  project.image,
-                  fit: BoxFit.cover,
-                  width: double.infinity,
                 ),
-              ),
-              const SizedBox(height: 20),
-              ProjectInfo(project: project),
-            ],
-          );
+                const SizedBox(height: 20),
+                ProjectInfo(project: project),
+              ],
+            ),
+    );
   }
 }
 

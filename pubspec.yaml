@@ -43,6 +43,7 @@ dependencies:
     git:
       url: https://github.com/YeLwinOo-Steve/layout.git
       ref: main
+  go_router: ^16.0.0
 
 dev_dependencies:
   flutter_test:

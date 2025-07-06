@@ -1,24 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/core/extensions/extensions.dart';
 import 'package:flutter_portfolio/feature/home/data/models/project_info.dart';
-import 'package:flutter_portfolio/feature/widgets/icon_label.dart';
+import 'icon_label.dart';
 
 class InfoSection extends StatelessWidget {
-  final AnimationController controller;
   final ProjectInfo info;
 
-  InfoSection({super.key, required this.controller, required this.info})
-    : _slideUpAnimation = Tween<Offset>(
-        begin: const Offset(0, 1),
-        end: Offset.zero,
-      ).animate(CurvedAnimation(parent: controller, curve: Curves.easeInOut)),
-      _fadeAnimation = Tween<double>(
-        begin: 0,
-        end: 1,
-      ).animate(CurvedAnimation(parent: controller, curve: Curves.easeInOut));
-
-  final Animation<Offset> _slideUpAnimation;
-  final Animation<double> _fadeAnimation;
+  const InfoSection({super.key, required this.info});
 
   @override
   Widget build(BuildContext context) {
@@ -32,38 +19,29 @@ class InfoSection extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           IconLabel(
             icon: info.icon,
-            controller: controller,
             label: info.label,
             coverColor: Colors.white,
             textStyle: Theme.of(
               context,
             ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w700),
           ),
-
+          const SizedBox(height: 8),
           ...info.contents.map((content) {
-            return FadeTransition(
-              opacity: _fadeAnimation,
-              child: SlideTransition(
-                position: _slideUpAnimation,
-                child: GestureDetector(
-                  // onTap: () => content.launchWebsite(),
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 64.0), // 2 * 32
-                    child: Text(
-                      info.isTag == true
-                          ? content.prefixHash()
-                          : content.prefixDash(),
-                      style: TextStyle(
-                        decoration: info.isLink == true
-                            ? TextDecoration.underline
-                            : TextDecoration.none,
-                        decorationColor: Colors.black26,
-                      ),
-                    ),
-                  ),
+            final text = info.isTag == true ? '#$content' : '- $content';
+
+            return Padding(
+              padding: const EdgeInsets.only(left: 32.0),
+              child: Text(
+                text,
+                style: TextStyle(
+                  decoration: info.isLink == true
+                      ? TextDecoration.underline
+                      : TextDecoration.none,
+                  decorationColor: Colors.black26,
                 ),
               ),
             );

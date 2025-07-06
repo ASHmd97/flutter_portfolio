@@ -388,6 +388,7 @@ const String _WEB = 'Web';
 
 final List<ShowcaseProject> ksShowcaseProjects = [
   ShowcaseProject(
+    id: 'pulse-x',
     title: 'Pulse-X State Management',
     image: kaPulseX,
     shortDescription:
@@ -433,6 +434,7 @@ final List<ShowcaseProject> ksShowcaseProjects = [
     ),
   ),
   ShowcaseProject(
+    id: 'notee',
     title: 'Notee Personal Management App',
     image: kaNotee,
     shortDescription: "Notee is a personal management app built with Flutter",
@@ -480,6 +482,7 @@ final List<ShowcaseProject> ksShowcaseProjects = [
     ),
   ),
   ShowcaseProject(
+    id: 'threads_logo',
     title: 'Threads Logo Animation',
     image: kaThread,
     shortDescription:
@@ -517,6 +520,7 @@ final List<ShowcaseProject> ksShowcaseProjects = [
     ),
   ),
   ShowcaseProject(
+    id: 'the_golden_land',
     title: 'The Golden Land (Myanmar) ',
     image: kaTheGoldenLand,
     shortDescription:
@@ -565,6 +569,7 @@ final List<ShowcaseProject> ksShowcaseProjects = [
     ),
   ),
   ShowcaseProject(
+    id: 'pretty_animated_buttons',
     title: 'Pretty Animated Buttons',
     image: kaAnimatedButtons,
     shortDescription:
@@ -607,6 +612,7 @@ final List<ShowcaseProject> ksShowcaseProjects = [
     ),
   ),
   ShowcaseProject(
+    id: 'flappy_ironman',
     title: 'Flappy Ironman',
     image: kaIronMan,
     shortDescription: "Flappy Ironman game inspired by Flappy Bird Game",
@@ -641,6 +647,7 @@ final List<ShowcaseProject> ksShowcaseProjects = [
     ),
   ),
   ShowcaseProject(
+    id: 'ai_chat_bot',
     title: 'AI Chat Bot',
     image: kaAIChatBot,
     shortDescription: "AI chat bot using Flutter and Dialogflow.",
@@ -674,6 +681,7 @@ final List<ShowcaseProject> ksShowcaseProjects = [
     ),
   ),
   ShowcaseProject(
+    id: 'graphql_notes',
     title: 'GraphQL Notes',
     image: kaGraphQLNotes,
     shortDescription: "My Apollo graphQL Associate Certified Developer path",
@@ -707,6 +715,7 @@ final List<ShowcaseProject> ksShowcaseProjects = [
     ),
   ),
   ShowcaseProject(
+    id: 'design_patterns',
     title: 'Design Patterns',
     image: kaDesignPatterns,
     shortDescription:

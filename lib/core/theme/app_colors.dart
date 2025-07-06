@@ -10,6 +10,11 @@ class AppColors {
   static const Color zinc200 = Color(0xffe4e4e7);
   static const Color zinc300 = Color(0xffd4d4d8);
   static const Color zinc500 = Color(0xff71717a);
+
+  static const Color kPrimary = Color(0xffF4F4EF);
+  static const Color kSecondary = Color(0xffC7D3B6);
+  static const Color kPrimaryMedium = Color(0xfffdffa5);
+  static const Color kCoffee = Color(0xff6f4e37);
   // Color intensity constants
   static const int baseColor = 1000;
   static const int colorCode10 = 10;
