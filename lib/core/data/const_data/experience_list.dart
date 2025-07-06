@@ -1,4 +1,4 @@
-import 'package:flutter_portfolio/feature/home/data/models/experience_model.dart';
+import 'package:flutter_portfolio/core/data/models/experience_model.dart';
 
 final List<ExperienceModel> experienceList = [
   ExperienceModel(

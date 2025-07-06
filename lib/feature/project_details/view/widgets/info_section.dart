@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/feature/home/data/models/project_info.dart';
+import 'package:flutter_portfolio/core/data/models/project_info.dart';
 import 'icon_label.dart';
 
 class InfoSection extends StatelessWidget {

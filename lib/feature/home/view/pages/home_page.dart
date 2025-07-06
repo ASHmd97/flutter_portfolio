@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/core/resources/assets.dart';
 
 import 'package:flutter_portfolio/core/responsive/responsive_design.dart';
+import 'package:flutter_portfolio/core/routes/routes.dart';
 import 'package:flutter_portfolio/core/theme/app_colors.dart';
 import 'package:flutter_portfolio/core/theme/app_styles.dart';
 import 'package:flutter_portfolio/feature/home/view/widgets/home_page_body.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:icons_plus/icons_plus.dart';
 
 class HomePage extends StatelessWidget {
@@ -13,7 +15,12 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final navItems = ['About Me', 'Skills', 'Project', 'Contact Me'];
+    List<NavModel> navItems = [
+      NavModel(title: "About Me", path: Routes.about),
+      NavModel(title: "Skills", path: Routes.skills),
+      NavModel(title: "Project", path: Routes.projects),
+      NavModel(title: "Contact Me", path: Routes.contact),
+    ];
     return Scaffold(
       endDrawer: _isMobile(context) ? MobileDrawer(navItems: navItems) : null,
 
@@ -37,9 +44,11 @@ class HomePage extends StatelessWidget {
                       (item) => Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 12),
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            GoRouter.of(context).go(item.path);
+                          },
                           child: Text(
-                            item,
+                            item.title,
                             style: FigmaTextStyles().headingH5Semibold,
                           ),
                         ),
@@ -97,7 +106,7 @@ class HomePage extends StatelessWidget {
 class MobileDrawer extends StatelessWidget {
   const MobileDrawer({super.key, required this.navItems});
 
-  final List<String> navItems;
+  final List<NavModel> navItems;
 
   @override
   Widget build(BuildContext context) {
@@ -121,11 +130,14 @@ class MobileDrawer extends StatelessWidget {
           ...navItems.map(
             (item) => ListTile(
               title: Text(
-                item,
+                item.title,
                 style: FigmaTextStyles().headingH5Semibold.copyWith(
                   color: Colors.white,
                 ),
               ),
+              onTap: () {
+                GoRouter.of(context).go(item.path);
+              },
             ),
           ),
           Divider(),
@@ -155,3 +167,19 @@ class MobileDrawer extends StatelessWidget {
     );
   }
 }
+
+class NavModel {
+  final String title;
+  final String path;
+
+  NavModel({required this.title, required this.path});
+}
+
+// class NavItems {
+//   static List<NavModel> navItems = [
+//     NavModel(title: "About Me", path: Routes.about),
+//     NavModel(title: "Skills", path: Routes.skills),
+//     NavModel(title: "Project", path: Routes.projects),
+//     NavModel(title: "Contact Me", path: Routes.contact),
+//   ];
+// }

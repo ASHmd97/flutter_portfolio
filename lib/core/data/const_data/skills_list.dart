@@ -1,5 +1,5 @@
 import 'package:flutter_portfolio/core/resources/assets.dart';
-import 'package:flutter_portfolio/feature/home/data/models/skill_model.dart';
+import 'package:flutter_portfolio/core/data/models/skill_model.dart';
 
 final List<SkillModel> skillsList = [
   SkillModel(title: 'Python', image: Assets.iconsPython),

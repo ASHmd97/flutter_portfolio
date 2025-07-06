@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/core/routes/routes.dart';
+import 'package:flutter_portfolio/feature/home/view/widgets/custom_button.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:flutter_portfolio/core/resources/assets.dart';
 import 'package:flutter_portfolio/core/theme/app_styles.dart';
@@ -40,6 +43,13 @@ class HeroSectionDesktop extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.6,
                 fit: BoxFit.fitWidth,
               ),
+            ),
+            CustomButton(
+              label: "Download CV",
+              onPressed: () {
+                // GoRouter.of(context).go(Routes.about);
+              },
+              icon: Icons.arrow_right_alt_sharp,
             ),
             Positioned(left: 0, bottom: 0, child: const SocialIcons()),
           ],

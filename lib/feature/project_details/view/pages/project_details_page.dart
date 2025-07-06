@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/core/theme/app_colors.dart';
 import 'package:flutter_portfolio/core/theme/app_styles.dart';
-import 'package:flutter_portfolio/feature/home/data/models/showcase_project.dart';
+import 'package:flutter_portfolio/core/data/models/showcase_project.dart';
 import 'package:flutter_portfolio/feature/project_details/view/widgets/project_overview.dart';
+import 'package:go_router/go_router.dart';
 
 class ProjectDetailsView extends StatelessWidget {
   final ShowcaseProject project;
@@ -14,8 +15,11 @@ class ProjectDetailsView extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: AppColors.kPrimary,
+
       appBar: AppBar(
         backgroundColor: AppColors.kPrimary,
+        automaticallyImplyLeading: false,
+
         elevation: 0,
         title: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 50),
@@ -31,7 +35,7 @@ class ProjectDetailsView extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
               ),
               IconButton(
-                onPressed: () => Navigator.of(context).pop(),
+                onPressed: () => GoRouter.of(context).pop(),
                 icon: const Icon(Icons.close),
               ),
             ],

@@ -2,19 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/core/resources/assets.dart';
 import 'package:flutter_portfolio/core/theme/app_colors.dart';
 import 'package:flutter_portfolio/core/theme/app_styles.dart';
-import 'package:flutter_portfolio/feature/home/view/widgets/about_me/about_me_title.dart';
+import 'package:flutter_portfolio/feature/about_me/about_me_title.dart';
 import 'package:flutter_svg/svg.dart';
 
-class AboutMeDesktop extends StatelessWidget {
+class AboutMeTablet extends StatelessWidget {
   final List<String> aboutMeParagraphList;
 
-  const AboutMeDesktop({super.key, required this.aboutMeParagraphList});
+  const AboutMeTablet({super.key, required this.aboutMeParagraphList});
 
   @override
   Widget build(BuildContext context) {
-    
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 60),
+      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
@@ -31,7 +30,7 @@ class AboutMeDesktop extends StatelessWidget {
                 ...aboutMeParagraphList.map(
                   (e) => Padding(
                     padding: const EdgeInsets.symmetric(
-                      vertical: 12,
+                      vertical: 6,
                       horizontal: 0,
                     ),
                     child: Text(

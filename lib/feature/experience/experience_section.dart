@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/core/theme/app_colors.dart';
 import 'package:flutter_portfolio/core/theme/app_styles.dart';
-import 'package:flutter_portfolio/feature/home/data/const_data/experience_list.dart';
-import 'package:flutter_portfolio/feature/home/data/models/experience_model.dart';
+import 'package:flutter_portfolio/core/data/const_data/experience_list.dart';
+import 'package:flutter_portfolio/core/data/models/experience_model.dart';
 
 class ExperienceSection extends StatelessWidget {
   const ExperienceSection({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/core/theme/app_colors.dart';
 import 'package:flutter_portfolio/core/theme/app_styles.dart';
-import 'package:flutter_portfolio/feature/home/data/models/showcase_project.dart';
+import 'package:flutter_portfolio/core/data/models/showcase_project.dart';
 import 'package:flutter_portfolio/feature/project_details/view/widgets/project_image_gallery.dart';
 import 'package:flutter_portfolio/feature/project_details/view/widgets/info_section.dart';
 

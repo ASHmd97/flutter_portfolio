@@ -1,7 +1,7 @@
-import 'package:flutter_portfolio/feature/home/data/configs/constant_assets.dart';
-import 'package:flutter_portfolio/feature/home/data/configs/constant_icons.dart';
-import 'package:flutter_portfolio/feature/home/data/models/project_info.dart';
-import 'package:flutter_portfolio/feature/home/data/models/showcase_project.dart';
+import 'package:flutter_portfolio/core/data/configs/constant_assets.dart';
+import 'package:flutter_portfolio/core/data/configs/constant_icons.dart';
+import 'package:flutter_portfolio/core/data/models/project_info.dart';
+import 'package:flutter_portfolio/core/data/models/showcase_project.dart';
 
 /// constant strings are prefixed with [ks]
 const String ksFontFamily = "ShantellSans";

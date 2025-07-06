@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/core/responsive/responsive.dart';
 import 'package:flutter_portfolio/core/theme/app_styles.dart';
-import 'package:flutter_portfolio/feature/home/data/const_data/skills_list.dart';
-import 'package:flutter_portfolio/feature/home/view/widgets/skills/skill_card.dart';
+import 'package:flutter_portfolio/core/data/const_data/skills_list.dart';
+import 'package:flutter_portfolio/feature/skills/skill_card.dart';
 
 class SkillsSection extends StatelessWidget {
   const SkillsSection({super.key});

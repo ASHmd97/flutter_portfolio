@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/core/responsive/responsive.dart';
+import 'package:flutter_portfolio/core/routes/routes.dart';
 import 'package:flutter_portfolio/core/theme/app_colors.dart';
 import 'package:flutter_portfolio/core/theme/app_styles.dart';
-import 'package:flutter_portfolio/feature/home/data/configs/configs.dart';
-import 'package:flutter_portfolio/feature/home/data/models/showcase_project.dart';
+import 'package:flutter_portfolio/core/data/configs/configs.dart';
+import 'package:flutter_portfolio/core/data/models/showcase_project.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 
@@ -16,7 +17,7 @@ class ProjectCard extends StatelessWidget {
     bool isOod = ksShowcaseProjects.indexOf(project) % 2 == 0;
     return GestureDetector(
       onTap: () {
-        GoRouter.of(context).go('/project/${project.id}');
+        GoRouter.of(context).go('${Routes.projectDetails}/${project.id}');
       },
       child: Responsive.isDesktop(context) || Responsive.isTablet(context)
           ? Container(
