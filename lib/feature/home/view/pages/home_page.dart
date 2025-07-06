@@ -4,6 +4,7 @@ import 'package:flutter_portfolio/core/resources/assets.dart';
 import 'package:flutter_portfolio/core/responsive/responsive_design.dart';
 import 'package:flutter_portfolio/core/routes/routes.dart';
 import 'package:flutter_portfolio/core/theme/app_colors.dart';
+import 'package:flutter_portfolio/core/theme/app_font_style.dart';
 import 'package:flutter_portfolio/core/theme/app_styles.dart';
 import 'package:flutter_portfolio/feature/home/view/widgets/home_page_body.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -49,7 +50,9 @@ class HomePage extends StatelessWidget {
                           },
                           child: Text(
                             item.title,
-                            style: FigmaTextStyles().headingH5Semibold,
+                            style: FigmaTextStyles().headingH5Semibold.copyWith(
+                              fontFamily: AppFontStyle.shantellSans,
+                            ),
                           ),
                         ),
                       ),

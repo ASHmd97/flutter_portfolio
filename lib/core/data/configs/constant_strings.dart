@@ -1,6 +1,7 @@
 import 'package:flutter_portfolio/core/data/configs/constant_assets.dart';
 import 'package:flutter_portfolio/core/data/configs/constant_icons.dart';
 import 'package:flutter_portfolio/core/data/models/project_info.dart';
+import 'package:flutter_portfolio/core/data/models/quote.dart';
 import 'package:flutter_portfolio/core/data/models/showcase_project.dart';
 
 /// constant strings are prefixed with [ks]
@@ -48,8 +49,8 @@ const String ksSlash = "/";
 const String ksLetsWork = "Let's work together!";
 const String ksFreelanceAvailability = "I'm available for Freelancing";
 const String ksContactInfo = "- Contact Info";
-const String ksWorkEmail = "yelwinoo.work@gmail.com";
-const String ksWorkPhone = "+959 976294818";
+const String ksWorkEmail = "ahmed.hmd1996@gmail.com";
+const String ksWorkPhone = "+20 1010636562";
 const String ksCreditTo = "- Big Thanks";
 const String ksDavidCobbina = "David Cobbina";
 const String ksDavidCobbinaWebsite = "https://davidcobbina.com/";
@@ -58,7 +59,8 @@ const String ksJuliusGWebsite =
     "https://www.behance.net/gallery/63574251/Personal-Portfolio-Website-Design";
 const String ksBuildUsing = "Build using ";
 const String ksWithMuch = " with much ";
-const String ksCC = "©️ 2023 Ye Lwin Oo";
+const String ksCC = "©️ 2025 ";
+const String ksAllRightsReserved = ". All rights reserved.";
 const String ksYoung = "When I was young, I was a kid!";
 const String ksNobody = "I'm NOBODY";
 const String ksSpecialization =
@@ -253,72 +255,75 @@ const String _johnLennon = "John Lennon";
 const String _steveJobs = "Steve Jobs";
 const String _kurtCobain = "Kurt Cobain";
 const String _jamesClear = "James Clear";
-// final List<Quote> ksQuotes = [
-//   Quote(
-//     name:
-//         "Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.",
-//     author: _nikolaTesla,
-//   ),
-//   Quote(
-//     name:
-//         "I’m not a great programmer. I’m just a good programmer with great habits.",
-//     author: _kentBeck,
-//   ),
-//   Quote(
-//     name: "I'm generally a very pragmatic person: that which works, works.",
-//     author: _linusTorvalds,
-//   ),
-//   Quote(
-//     name: "Premature optimization is the root of all evil.",
-//     author: _donaldKnuth,
-//   ),
-//   Quote(
-//     name:
-//         "Everyday life is like programming, I guess. If you love something you can put beauty into it.",
-//     author: _donaldKnuth,
-//   ),
-//   Quote(
-//     name: "A person who never made a mistake never tried anything new.",
-//     author: _albertEinstein,
-//   ),
-//   Quote(
-//     name: "I have no special talent. I am only passionately curious.",
-//     author: _albertEinstein,
-//   ),
-//   Quote(
-//     name:
-//         "Sometimes it is the people who no one imagines anything of who do the things that no one can imagine.",
-//     author: _alanTuring,
-//   ),
-//   Quote(
-//     name: "Life is what happens when you're busy making other plans.",
-//     author: _johnLennon,
-//   ),
-//   Quote(
-//     name: "The duty of youth is to challenge corruption.",
-//     author: _kurtCobain,
-//   ),
-//   Quote(
-//     name: "Stay hungry, stay foolish.",
-//     author: _steveJobs,
-//   ),
-//   Quote(
-//     name: "It's hard to build momentum if you're dividing your attention.",
-//     author: _jamesClear,
-//   ),
-//   Quote(
-//     name: "Deconstruction creates knowledge. Recombination creates value.",
-//     author: _jamesClear,
-//   ),
-// ];
+final List<Quote> ksQuotes = [
+  Quote(
+    name:
+        "Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.",
+    author: _nikolaTesla,
+  ),
+  Quote(
+    name:
+        "I’m not a great programmer. I’m just a good programmer with great habits.",
+    author: _kentBeck,
+  ),
+  Quote(
+    name: "I'm generally a very pragmatic person: that which works, works.",
+    author: _linusTorvalds,
+  ),
+  Quote(
+    name: "Premature optimization is the root of all evil.",
+    author: _donaldKnuth,
+  ),
+  Quote(
+    name:
+        "Everyday life is like programming, I guess. If you love something you can put beauty into it.",
+    author: _donaldKnuth,
+  ),
+  Quote(
+    name: "A person who never made a mistake never tried anything new.",
+    author: _albertEinstein,
+  ),
+  Quote(
+    name: "I have no special talent. I am only passionately curious.",
+    author: _albertEinstein,
+  ),
+  Quote(
+    name:
+        "Sometimes it is the people who no one imagines anything of who do the things that no one can imagine.",
+    author: _alanTuring,
+  ),
+  Quote(
+    name: "Life is what happens when you're busy making other plans.",
+    author: _johnLennon,
+  ),
+  Quote(
+    name: "The duty of youth is to challenge corruption.",
+    author: _kurtCobain,
+  ),
+  Quote(name: "Stay hungry, stay foolish.", author: _steveJobs),
+  Quote(
+    name: "It's hard to build momentum if you're dividing your attention.",
+    author: _jamesClear,
+  ),
+  Quote(
+    name: "Deconstruction creates knowledge. Recombination creates value.",
+    author: _jamesClear,
+  ),
+];
 
-const String ksFacebookLink = 'https://www.facebook.com/ye.lwin.oo.someone';
-const String ksGithubLink = 'https://github.com/YeLwinOo-Steve';
-const String ksLinkedInLink = 'https://www.linkedin.com/in/ye-lwin-oo-ucsm/';
-const String ksMediumLink = 'https://yelwino.medium.com/';
-const String ksStackoverflowLink =
-    'https://stackoverflow.com/users/19209151/ye-lwin-oo';
-const String ksDiscordLink = 'https://discordapp.com/users/809527318632071178';
+const String ksFacebookLink = 'https://www.facebook.com/ahmed.hmd.169';
+const String ksFacebookLinkSlash = 'facebook.com/ahmed.hmd.169';
+
+const String ksGithubLink = 'https://github.com/ASHmd97';
+const String ksGithubLinkSlash = 'github.com/ASHmd97';
+
+const String ksLinkedInLink = 'https://www.linkedin.com/in/ahmed-safwat-hmd/';
+const String ksLinkedInLinkSlash = 'linkedin.com/in/ahmed-safwat-hmd/';
+
+// const String ksMediumLink = 'https://yelwino.medium.com/';
+// const String ksStackoverflowLink =
+//     'https://stackoverflow.com/users/19209151/ye-lwin-oo';
+// const String ksDiscordLink = 'https://discordapp.com/users/809527318632071178';
 // final List<SocialMedia> ksSocialMedia = [
 //   SocialMedia(
 //     link: ksFacebookLink,

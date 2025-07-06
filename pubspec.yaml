@@ -44,6 +44,7 @@ dependencies:
       url: https://github.com/YeLwinOo-Steve/layout.git
       ref: main
   go_router: ^16.0.0
+  lottie: ^3.3.1
 
 dev_dependencies:
   flutter_test:
@@ -82,25 +83,51 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: AntDesign
-  #     fonts:
-  #       - asset: packages/icons_plus/fonts/AntDesign.ttf
-  #   - family: Bootstrap
-  #     fonts:
-  #       - asset: packages/icons_plus/fonts/Bootstrap.ttf
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/poppins/Poppins-Regular.ttf
+        - asset: assets/fonts/poppins/Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/poppins/Poppins-ExtraLight.ttf
+          weight: 100
+        - asset: assets/fonts/poppins/Poppins-Light.ttf
+          weight: 200
+        - asset: assets/fonts/poppins/Poppins-Medium.ttf
+          weight: 400
+        - asset: assets/fonts/poppins/Poppins-Regular.ttf
+          weight: 500
+        - asset: assets/fonts/poppins/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/poppins/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/poppins/Poppins-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/poppins/Poppins-Black.ttf
+          weight: 900
+
+    - family: ShantellSans
+      fonts:
+        - asset: assets/fonts/shantell_sans/ShantellSans-Regular.ttf
+        - asset: assets/fonts/shantell_sans/ShantellSans-Italic.ttf
+          style: italic
+        - asset: assets/fonts/shantell_sans/ShantellSans-Light.ttf
+          weight: 100
+        - asset: assets/fonts/shantell_sans/ShantellSans-Light.ttf
+          weight: 200
+        - asset: assets/fonts/shantell_sans/ShantellSans-Medium.ttf
+          weight: 400
+        - asset: assets/fonts/shantell_sans/ShantellSans-Regular.ttf
+          weight: 500
+        - asset: assets/fonts/shantell_sans/ShantellSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/shantell_sans/ShantellSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/shantell_sans/ShantellSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/shantell_sans/ShantellSans-ExtraBold.ttf
+          weight: 900
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 flutter_assets:

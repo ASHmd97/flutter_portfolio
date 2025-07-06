@@ -10,7 +10,7 @@ class AppTheme {
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     brightness: Brightness.light,
-    fontFamily: AppFontStyle.customAppFont.fontFamily,
+    fontFamily: AppFontStyle.shantellSans,
 
     // Color Scheme
     colorScheme: ColorScheme.fromSeed(
@@ -40,7 +40,7 @@ class AppTheme {
         fontSize: R.textXL,
         fontWeight: FontWeight.w600,
         color: AppColors.white,
-        fontFamily: AppFontStyle.customAppFont.fontFamily, // Custom font
+        fontFamily: AppFontStyle.shantellSans,
       ),
       iconTheme: IconThemeData(color: AppColors.white, size: R.iconLG),
     ),
@@ -55,7 +55,9 @@ class AppTheme {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(R.borderSMValue),
         ),
-        textStyle: FigmaTextStyles().buttonTextSemiBold,
+        textStyle: FigmaTextStyles().buttonTextSemiBold.copyWith(
+          fontFamily: AppFontStyle.shantellSans,
+        ),
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
         minimumSize: Size(double.infinity, R.adaptiveButtonHeight),
       ),
@@ -103,7 +105,7 @@ class AppTheme {
     // =================== Icon Button Theme===================
     iconButtonTheme: IconButtonThemeData(
       style: ButtonStyle(
-        backgroundColor: WidgetStateProperty.all(AppColors.white),
+        backgroundColor: WidgetStateProperty.all(AppColors.kPrimary),
         padding: WidgetStateProperty.all(EdgeInsets.all(R.paddingSMValue)),
         shape: WidgetStateProperty.all(
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
