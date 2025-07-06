@@ -87,8 +87,7 @@ class _CustomButtonState extends State<CustomButton> {
                     curve: Curves.easeInOut,
                     child: SizedBox(width: _isHovered ? s10 : s5),
                   ),
-
-                  Icon(widget.icon),
+                  Icon(widget.icon, color: widget.foregroundColor),
                 ],
               ),
             ),

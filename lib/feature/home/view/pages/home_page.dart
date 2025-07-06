@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
     ];
     return Scaffold(
       endDrawer: _isMobile(context) ? MobileDrawer(navItems: navItems) : null,
-
+      backgroundColor: AppColors.kPrimary,
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
