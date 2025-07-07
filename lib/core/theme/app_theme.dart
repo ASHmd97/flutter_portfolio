@@ -138,26 +138,26 @@ class AppTheme {
       ),
 
       // Border styles - Responsive
-      border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(R.borderInputValue),
-        borderSide: BorderSide(color: Colors.white, width: 1),
-      ),
-      enabledBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(R.borderInputValue),
-        borderSide: BorderSide(color: Colors.white, width: 1),
-      ),
-      focusedBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(R.borderInputValue),
-        borderSide: BorderSide(color: AppColors.primaryOrange, width: 2),
-      ),
-      errorBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(R.borderInputValue),
-        borderSide: BorderSide(color: AppColors.error, width: 2),
-      ),
-      focusedErrorBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(R.borderInputValue),
-        borderSide: BorderSide(color: AppColors.error, width: 2),
-      ),
+      // border: OutlineInputBorder(
+      //   borderRadius: BorderRadius.circular(R.borderInputValue),
+      //   borderSide: BorderSide(color: Colors.white, width: 1),
+      // ),
+      // enabledBorder: OutlineInputBorder(
+      //   borderRadius: BorderRadius.circular(R.borderInputValue),
+      //   borderSide: BorderSide(color: Colors.white, width: 1),
+      // ),
+      // focusedBorder: OutlineInputBorder(
+      //   borderRadius: BorderRadius.circular(R.borderInputValue),
+      //   borderSide: BorderSide(color: AppColors.primaryOrange, width: 2),
+      // ),
+      // errorBorder: OutlineInputBorder(
+      //   borderRadius: BorderRadius.circular(R.borderInputValue),
+      //   borderSide: BorderSide(color: AppColors.error, width: 2),
+      // ),
+      // focusedErrorBorder: OutlineInputBorder(
+      //   borderRadius: BorderRadius.circular(R.borderInputValue),
+      //   borderSide: BorderSide(color: AppColors.error, width: 2),
+      // ),
 
       // Text styles - Responsive
       hintStyle: TextStyle(

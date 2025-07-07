@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/core/extensions/extensions.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
 extension WidgetEx on Widget {
@@ -104,30 +105,30 @@ extension WidgetListEx on List<Widget> {
     );
   }
 
-  // Widget addDesktopRowMobileColumn(
-  //   BuildContext context, {
-  //   MainAxisSize mSize = MainAxisSize.min,
-  //   MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
-  //   CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center,
-  // }) {
-  //   return context.adaptive<Widget>(
-  //     addColumn(
-  //       mainAxisSize: mSize,
-  //       mainAxisAlignment: mainAxisAlignment,
-  //       crossAxisAlignment: crossAxisAlignment,
-  //     ),
-  //     addRow(
-  //       mainAxisSize: mSize,
-  //       mainAxisAlignment: mainAxisAlignment,
-  //       crossAxisAlignment: crossAxisAlignment,
-  //     ),
-  //     md: addColumn(
-  //       mainAxisSize: mSize,
-  //       mainAxisAlignment: mainAxisAlignment,
-  //       crossAxisAlignment: crossAxisAlignment,
-  //     ),
-  //   );
-  // }
+  Widget addDesktopRowMobileColumn(
+    BuildContext context, {
+    MainAxisSize mSize = MainAxisSize.min,
+    MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
+    CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center,
+  }) {
+    return context.adaptive<Widget>(
+      addColumn(
+        mainAxisSize: mSize,
+        mainAxisAlignment: mainAxisAlignment,
+        crossAxisAlignment: crossAxisAlignment,
+      ),
+      addRow(
+        mainAxisSize: mSize,
+        mainAxisAlignment: mainAxisAlignment,
+        crossAxisAlignment: crossAxisAlignment,
+      ),
+      md: addColumn(
+        mainAxisSize: mSize,
+        mainAxisAlignment: mainAxisAlignment,
+        crossAxisAlignment: crossAxisAlignment,
+      ),
+    );
+  }
 
   Widget addWrap({
     double spacing = 0.0,

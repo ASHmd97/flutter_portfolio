@@ -7,4 +7,5 @@ class Routes {
   static const String about = '/about';
   static const String contact = '/contact';
   static const String skills = '/skills';
+  static const String contactMe = '/contactMe';
 }
